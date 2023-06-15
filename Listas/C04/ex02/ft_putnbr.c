@@ -6,7 +6,7 @@
 /*   By: vlima-de <vlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 14:48:08 by vlima-de          #+#    #+#             */
-/*   Updated: 2023/06/14 14:59:02 by vlima-de         ###   ########.fr       */
+/*   Updated: 2023/06/15 13:10:08 by vlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int	main(void)
-{
-	ft_putnbr(42);
-}
+// int	main(void)
+// {
+// 	ft_putnbr(42);
+// }
