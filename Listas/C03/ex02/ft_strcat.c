@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vlima-de <vlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/14 11:26:51 by vlima-de          #+#    #+#             */
-/*   Updated: 2023/06/15 13:35:49 by vlima-de         ###   ########.fr       */
+/*   Created: 2023/06/15 13:38:35 by vlima-de          #+#    #+#             */
+/*   Updated: 2023/06/15 13:44:52 by vlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
-	unsigned int	i;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
-	{
+	while (dest[i] != '\0')
 		i++;
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i + j] = src[j];
+		j++;
 	}
-	return (s1[i] - s2[i]);
+	dest[i + j] = '\0';
+	return (dest);
 }
 
 // #include <stdio.h>
 
-// int	main(void)
+// int    main(void)
 // {
-// 	printf("%d\n", ft_strcmp("OLA", "OlA"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Vero"));
-// 	printf("%d\n", ft_strcmp("Vero", "Veronica"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Veronica"));
+//     char    string_1[] = "sky is ";
+//     char    string_2[] = "purple";
+
+//     printf("ft_strcat: = %s\n", ft_strcat(string_1, string_2));
 //     return (0);
 // }

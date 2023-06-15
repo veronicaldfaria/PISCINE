@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vlima-de <vlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/14 11:26:51 by vlima-de          #+#    #+#             */
-/*   Updated: 2023/06/15 13:35:49 by vlima-de         ###   ########.fr       */
+/*   Created: 2023/06/15 13:34:14 by vlima-de          #+#    #+#             */
+/*   Updated: 2023/06/15 13:44:33 by vlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
+	while ((s1[i] != '\0') && (i < n))
 	{
+		if (!(s1[i] == s2[i]))
+			return (s1[i] - s2[i]);
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (0);
 }
 
 // #include <stdio.h>
 
-// int	main(void)
+// int    main(void)
 // {
-// 	printf("%d\n", ft_strcmp("OLA", "OlA"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Vero"));
-// 	printf("%d\n", ft_strcmp("Vero", "Veronica"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Veronica"));
+//     char    string_1[] = "blue sky";
+//     char    string_2[] = "purple sky";
+//     char    string_3[] = "bl";
+
+//     printf("string_1 & strin_2  = %d\n", ft_strncmp(string_1, string_2, 2));
+//     printf("string_1 & string_3 = %d\n", ft_strncmp(string_1, string_3, 6));
 //     return (0);
 // }

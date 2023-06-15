@@ -1,34 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vlima-de <vlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/14 11:26:51 by vlima-de          #+#    #+#             */
-/*   Updated: 2023/06/15 13:35:49 by vlima-de         ###   ########.fr       */
+/*   Created: 2023/06/15 13:43:10 by vlima-de          #+#    #+#             */
+/*   Updated: 2023/06/15 13:45:21 by vlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+
+char	*ft_strstr(char *str, char *to_find)
 {
-	unsigned int	i;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
+	if (to_find[0] == '\0')
 	{
+		return (str);
+	}
+	while (str[i] != '\0')
+	{
+		j = 0;
+		while (str[i + j] != '\0' && str[i + j] == to_find[j])
+		{
+			if (to_find[j + 1] == '\0')
+			{
+				return (&str[i]);
+			}
+			j++;
+		}
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (0);
 }
 
 // #include <stdio.h>
 
-// int	main(void)
+// int	main(void) 
 // {
-// 	printf("%d\n", ft_strcmp("OLA", "OlA"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Vero"));
-// 	printf("%d\n", ft_strcmp("Vero", "Veronica"));
-// 	printf("%d\n", ft_strcmp("Veronica", "Veronica"));
-//     return (0);
+// 	char	str[] = "Let's find somethig!";
+// 	char	to_find[] = "t";
+
+// 	printf("%s\n", ft_strstr(str, to_find));
+// 	return(0);
 // }
