@@ -6,7 +6,7 @@
 /*   By: vlima-de <vlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 14:45:18 by vlima-de          #+#    #+#             */
-/*   Updated: 2023/06/15 13:09:29 by vlima-de         ###   ########.fr       */
+/*   Updated: 2023/06/15 14:59:49 by vlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putstr(char *str)
 
 // int	main(void)
 // {
-// 	char	str[100] = "Cmon, Mikey";
+// 	char	str[100] = "VEM MEDALHA!!!";
 // 	char	*p_str;
 
 // 	p_str = str;
