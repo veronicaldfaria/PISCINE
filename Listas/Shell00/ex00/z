@@ -7,14 +7,16 @@ Pasta de entrega : ex00/
 Ficheiros para entregar : z
 Funções autorizadas : Nenhuma
 
-• Crie um arquivo z que, quando se faz um cat acima, exiba um "Z"seguido de uma
-quebra de linha.
+• Crie um arquivo z que, quando se faz um cat acima, exiba um "Z" seguido de uma quebra de linha.
 ?>cat z
 Z
 ?>
------=-----
-How to do:
-> cd ex00
+_____________________________________________________________________________________________
+
+RESPOSTA:
+
+Apenas criamos um arquivo chamado z com um Z dentro, e checamos como o exercício pede:
+
 > echo -n Z > z
 > cat z
 Z%
