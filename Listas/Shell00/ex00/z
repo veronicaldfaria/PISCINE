@@ -17,6 +17,7 @@ RESPOSTA:
 
 Apenas criamos um arquivo chamado z com um Z dentro, e checamos como o exercício pede:
 
-> echo -n Z > z
+> echo Z > z
 > cat z
-Z%
+Z
+>
