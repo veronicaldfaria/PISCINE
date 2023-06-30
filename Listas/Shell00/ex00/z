@@ -1,4 +1,17 @@
-Z%
+Exercício 00 : Z
+
+Exercício : 00
+Os sábios sabem vizualizar um Z
+
+Pasta de entrega : ex00/
+Ficheiros para entregar : z
+Funções autorizadas : Nenhuma
+
+• Crie um arquivo z que, quando se faz um cat acima, exiba um "Z"seguido de uma
+quebra de linha.
+?>cat z
+Z
+?>
 -----=-----
 How to do:
 > cd ex00
